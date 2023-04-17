@@ -1,9 +1,6 @@
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
 import { useState } from 'react';
 import ToDoItem from "./ToDoItem";
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 
