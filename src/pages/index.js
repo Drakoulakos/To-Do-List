@@ -1,11 +1,22 @@
 import Head from 'next/head'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import ToDoItem from "./ToDoItem";
 
 export default function Home() {
 
   const [inputText, setInputText] = useState("");
   const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    const storedItems = localStorage.getItem("todo-items");
+    if (storedItems) {
+      setItems(JSON.parse(storedItems));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("todo-items", JSON.stringify(items));
+  }, [items]);
 
   function handleChange(event) {
     const newValue = event.target.value;
@@ -17,6 +28,10 @@ export default function Home() {
       return [...prevItems, inputText];
     });
     setInputText("");
+  }
+
+  function clearItems() {
+    setItems([])
   }
 
   return (
@@ -44,6 +59,9 @@ export default function Home() {
             <ToDoItem text={todoItem} key={index} />
           ))}
         </ul>
+        <button onClick={clearItems} style={{ cursor: "pointer" }}>
+          <span>Clear</span>
+        </button>
       </div>
     </div>
       </main>
