@@ -7,17 +7,6 @@ export default function Home() {
   const [inputText, setInputText] = useState("");
   const [items, setItems] = useState([]);
 
-  useEffect(() => {
-    const storedItems = localStorage.getItem("todo-items");
-    if (storedItems) {
-      setItems(JSON.parse(storedItems));
-    }
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem("todo-items", JSON.stringify(items));
-  }, [items]);
-
   function handleChange(event) {
     const newValue = event.target.value;
     setInputText(newValue);
