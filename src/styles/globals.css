@@ -7,7 +7,7 @@ body {
   justify-content: center;
   align-items: center;
   color: hsl(198, 1%, 29%);
-  font-family: cursive;
+  font-family: "Lucida Console", "Courier New", monospace;
   text-align: center;
   font-size: 130%;
 }
