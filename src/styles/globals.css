@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Caveat&display=swap');
 
 body {
   background-color: #ffeaa7;
@@ -9,7 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   color: hsl(198, 1%, 29%);
-  font-family: 'Castoro Titling', cursive;
+  font-family: 'Caveat', cursive;
   text-align: center;
   font-size: 130%;
 }
@@ -50,7 +50,7 @@ body {
   border-bottom-left-radius: 3px 15px;
   border: solid 3px transparent;
   border-bottom: dashed 3px #fdcb6e;
-  font-family: "Architects Daughter", cursive;
+  font-family: 'Caveat', cursive;
   font-size: 1rem;
   color: hsla(260, 2%, 25%, 0.7);
   width: 70%;
@@ -60,7 +60,7 @@ body {
 button {
   padding: 0;
   border: none;
-  font-family: "Architects Daughter", cursive;
+  font-family: 'Caveat', cursive;
   text-decoration: none;
   padding-bottom: 3px;
   border-radius: 5px;
