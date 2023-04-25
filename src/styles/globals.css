@@ -11,7 +11,7 @@ body {
   color: hsl(198, 1%, 29%);
   font-family: 'Caveat', cursive;
   text-align: center;
-  font-size: 130%;
+  font-size: 150%;
 }
 
 .container {
@@ -51,7 +51,7 @@ body {
   border: solid 3px transparent;
   border-bottom: dashed 3px #fdcb6e;
   font-family: 'Caveat', cursive;
-  font-size: 1rem;
+  font-size: 100%;
   color: hsla(260, 2%, 25%, 0.7);
   width: 70%;
   margin-bottom: 20px;
@@ -61,6 +61,7 @@ button {
   padding: 0;
   border: none;
   font-family: 'Caveat', cursive;
+  font-size: 80%;
   text-decoration: none;
   padding-bottom: 3px;
   border-radius: 5px;
